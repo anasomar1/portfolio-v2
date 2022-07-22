@@ -19,11 +19,11 @@ code {
   color: var(--primary);
   transition: all 200ms linear;
   --primary: #2b2b2b;
-  --secondary: #dbdbdb;
+  --secondary: #fff1f1;
 }
 
 .App.dark {
-  --primary: #dbdbdb;
+  --primary: #fff1f1;
   --secondary: #2b2b2b;
 }
 
