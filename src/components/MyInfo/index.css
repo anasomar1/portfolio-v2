@@ -1,0 +1,71 @@
+.my-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.my-info img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 7px solid var(--primary);
+  margin-right: 4rem;
+}
+
+.my-info .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h1 {
+  font-size: 3rem;
+}
+
+.info p {
+  text-transform: capitalize;
+}
+
+.info .skill {
+  display: flex;
+  align-items: center;
+}
+
+.info .skill p {
+  margin-left: 1rem;
+}
+
+.download {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: none;
+  width: 50%;
+  padding: 1rem 0.4rem;
+  background-color: var(--primary);
+  margin-top: 1rem;
+}
+
+.download:hover {
+  opacity: 90%;
+}
+
+.download p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .my-info {
+    flex-direction: column;
+  }
+  .my-info img {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+  }
+}

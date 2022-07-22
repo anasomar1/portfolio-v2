@@ -1,0 +1,54 @@
+.personal-projects {
+  margin: 3rem 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.projects .project {
+  border: 1px solid var(--primary);
+  padding: 1rem;
+}
+
+.projects .project h3 {
+  font-size: 1.5rem;
+}
+
+.projects .project h5 {
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+.projects .project img {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.projects .project .links a {
+  font-size: 1.2rem;
+  padding: 1rem 0.7rem;
+  text-decoration: underline;
+}
+
+.projects .project .technology {
+  font-family: inherit;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.5rem;
+  opacity: 80%;
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 950px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
