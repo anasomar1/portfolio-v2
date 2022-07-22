@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App(): ReactElement {
   const [theme, setTheme] = useState<string>(
@@ -20,6 +21,7 @@ function App(): ReactElement {
           <Navbar theme={theme} updateTheme={updateTheme} />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </div>

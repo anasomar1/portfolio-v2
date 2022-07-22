@@ -5,15 +5,15 @@ nav {
   height: 8vh;
 }
 
-.logo a {
+nav .logo a {
   text-decoration: none;
   color: var(--primary);
 }
-.logo h3 {
+nav .logo h3 {
   font-size: 3rem;
 }
 
-.right-nav {
+nav .right-nav {
   display: flex;
   align-items: center;
 }
@@ -57,14 +57,14 @@ nav ul li a:hover {
   color: rgb(91, 165, 235);
 }
 
-.toggle-button {
+nav .toggle-button {
   display: none;
   color: var(--primary);
   font-size: 1.6rem;
   cursor: pointer;
 }
 
-.theme {
+nav .theme {
   font-size: 1.6rem;
   margin-left: 1rem;
   cursor: pointer;
@@ -76,7 +76,7 @@ nav ul li a:hover {
   }
 }
 @media screen and (max-width: 700px) {
-  .toggle-button {
+  nav .toggle-button {
     display: block;
   }
   nav ul {
