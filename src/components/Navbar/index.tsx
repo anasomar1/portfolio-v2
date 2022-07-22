@@ -26,13 +26,13 @@ const Navbar = ({
         <div className="right-nav">
           <ul className={isMobileMenuOpen ? "active" : ""}>
             <li>
-              <Link onClick={closeMenu} to="/about">
-                About
+              <Link onClick={closeMenu} to="/">
+                Home
               </Link>
             </li>
             <li>
-              <Link onClick={closeMenu} to="/videos">
-                My Videos
+              <Link onClick={closeMenu} to="/about">
+                About
               </Link>
             </li>
             <li>

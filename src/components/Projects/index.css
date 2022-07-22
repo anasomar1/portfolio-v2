@@ -5,12 +5,13 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0;
 }
 
 .projects .project {
   border: 1px solid var(--primary);
+  border-radius: 1.5rem;
   padding: 1rem;
 }
 

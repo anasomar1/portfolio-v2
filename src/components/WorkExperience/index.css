@@ -8,7 +8,8 @@
 }
 
 .experience ul li {
-  margin: 1.2rem 0;
+  margin: 1rem 0;
+  line-height: 1.8;
 }
 
 .experience .date {

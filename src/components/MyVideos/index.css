@@ -1,0 +1,15 @@
+.my-videos .videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.my-videos .videos .video {
+  margin-bottom: 2rem;
+  border: 3px solid var(--primary);
+}
+
+@media screen and (max-width: 900px) {
+  .my-videos .videos {
+    grid-template-columns: 1fr;
+  }
+}

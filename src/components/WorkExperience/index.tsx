@@ -14,15 +14,20 @@ const WorkExperience = () => {
             the client for requirements, and demoing the latest changes
           </li>
           <li>
-            Working on various technologies on the front-end including Next.js,
-            React.js, Vue.js, TypeScript, HTML, CSS, JS, Tailwind, Bootstrap and
-            SASS
+            Working on various technologies on the front-end including
+            <strong>
+              {" "}
+              Next.js, React.js, Vue.js, TypeScript, HTML, CSS, JS, Tailwind,
+              Bootstrap and SASS
+            </strong>
           </li>
           <li>
-            Working on different technologies on the back-end including Node.js,
-            Java, Groovy, SQL, Rest APIs and Moqui
+            Working on different technologies on the back-end including{" "}
+            <strong>Node.js, Java, Groovy, SQL, Rest APIs and Moqui</strong>
           </li>
-          <li>Developing mobile applications using React Native</li>
+          <li>
+            Developing mobile applications using <strong> React Native</strong>
+          </li>
         </ul>
       </div>
     </div>

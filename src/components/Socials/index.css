@@ -1,0 +1,41 @@
+.socials-page {
+  height: 100vh;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials .social {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials .social svg {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: fff;
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+.socials .social svg:hover {
+  transform: scale(1.1);
+  color: rgb(241, 67, 61);
+}
+
+.socials .social span {
+  color: var(--primary);
+  opacity: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .socials {
+    flex-direction: column;
+  }
+}
