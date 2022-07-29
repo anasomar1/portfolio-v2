@@ -48,7 +48,7 @@ const Navbar = ({
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </div>
           <div className="theme">
-            {theme === "light" ? (
+            {theme === "light" || !theme ? (
               <MdOutlineDarkMode onClick={() => updateTheme("dark")} />
             ) : (
               <MdOutlineWbSunny onClick={() => updateTheme("light")} />
