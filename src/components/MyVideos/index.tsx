@@ -2,34 +2,74 @@ import React from "react";
 import "./index.css";
 
 const MyVideos = () => {
-  const videoIds = [
-    "hvDHGLnjLKU",
-    "K0_hZrV3TD4",
-    "Yh-9PrbzZAY",
-    "1eUeRUMfnU8",
-    "Hl9e-gPVBWo",
-    "WBDiE1o8hEM",
-    "dMMZhqtiVL8",
-    "mkp1o_XMG8c",
-    "UdELfjWggPc",
-    "IDW7tSRY5Wo",
-    "gR6mD5UO8kI",
+  const videos = [
+    {
+      id: "hvDHGLnjLKU",
+      name: "طريقة إنشاء موقع إلكتروني كامل باستخدام HTML CSS JS",
+      img: "website1.jpg",
+    },
+    {
+      id: "K0_hZrV3TD4",
+      name: "شرح كيفية إستخدام الرياكت مع التايبسكريبت React Typescript بالعربية",
+      img: "website2.jpg",
+    },
+    {
+      id: "Yh-9PrbzZAY",
+      name: "طريقة إنشاء موقع متعدد اللغات بإستخدام HTML JS - JavaScript Localization",
+      img: "website3.webp",
+    },
+    {
+      id: "1eUeRUMfnU8",
+      name: "شرح طريقة التلاعب بال DOM بإستخدام جافاسكريبت - JavaScript DOM Manipulation",
+      img: "website4.jpg",
+    },
+    {
+      id: "Hl9e-gPVBWo",
+      name: "طريقة إنشاء موقع لإختصار الروابط URL Shortener بإستخدام Node.js, Express, MongoDB, HTML, CSS, JS",
+      img: "website5.jpg",
+    },
+    {
+      id: "WBDiE1o8hEM",
+      name: "طريقة إنشاء موقع إلكتروني كامل باستخدام HTML CSS JS ونشره",
+      img: "website6.jpg",
+    },
+    {
+      id: "dMMZhqtiVL8",
+      name: "مشروع جافا سكريبت ١ - NASA API - HTML CSS JS",
+      img: "website7.jpg",
+    },
+    {
+      id: "mkp1o_XMG8c",
+      name: "طريقة إنشاء REST API باستخدام Node js و Express",
+      img: "website8.jpg",
+    },
+    {
+      id: "UdELfjWggPc",
+      name: "Styled Components Crash Course [Arabic] شرح",
+      img: "website9.jpg",
+    },
+    {
+      id: "IDW7tSRY5Wo",
+      name: "طريقة إنشاء Navigation Bar باستخدام React JS",
+      img: "website10.jpg",
+    },
   ];
+
   return (
     <div className="my-videos">
       <h1>My Videos</h1>
       <div className="videos">
-        {videoIds.map((id: string) => (
-          <iframe
-            width="100%"
-            height="100%"
-            src={"https://www.youtube.com/embed/" + id}
-            title="Youtube Video Player"
-            className="video"
-            frameBorder="0"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"
-            allowFullScreen
-          ></iframe>
+        {videos.map((video: Record<string, string>) => (
+          <div className="video" key={video.name}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={"https://youtu.be/" + video.id}
+            >
+              <h3>{video.name}</h3>
+              <img src={"/images/youtube/" + video.img} alt={video.name} />
+            </a>
+          </div>
         ))}
       </div>
     </div>
