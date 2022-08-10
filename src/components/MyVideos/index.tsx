@@ -57,7 +57,7 @@ const MyVideos = () => {
 
   return (
     <div className="my-videos">
-      <h1>My Videos</h1>
+      <h1>My videos</h1>
       <div className="videos">
         {videos.map((video: Record<string, string>) => (
           <div className="video" key={video.name}>
