@@ -10,16 +10,11 @@ function App(): ReactElement {
     localStorage.getItem("theme") || ""
   );
 
-  const updateTheme = (theme: string) => {
-    localStorage.setItem("theme", theme);
-    setTheme(theme);
-  };
-
   return (
     <BrowserRouter>
       <div className={`App ${theme}`}>
         <div className="main">
-          <Navbar theme={theme} updateTheme={updateTheme} />
+          <Navbar theme={theme} setTheme={setTheme} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

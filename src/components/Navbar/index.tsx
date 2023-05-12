@@ -6,14 +6,19 @@ import { MdOutlineWbSunny, MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = ({
   theme,
-  updateTheme,
+  setTheme,
 }: {
   theme: string;
-  updateTheme: Function;
+  setTheme: (theme: string) => void;
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const closeMenu = () => setIsMobileMenuOpen(false);
+
+  const updateTheme = (theme: string) => {
+    localStorage.setItem("theme", theme);
+    setTheme(theme);
+  };
 
   return (
     <>

@@ -20,11 +20,15 @@ code {
   transition: all 200ms linear;
   --primary: #2b2b2b;
   --secondary: #fff1f1;
+  --shadow-color: rgba(171, 173, 175, 0.582);
+  --box-color: #fff3f3;
 }
 
 .App.dark {
   --primary: #fff1f1;
   --secondary: #2b2b2b;
+  --shadow-color: rgba(20, 20, 20, 0.2);
+  --box-color: #333333;
 }
 
 .main {

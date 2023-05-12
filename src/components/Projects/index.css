@@ -10,7 +10,9 @@
 }
 
 .projects .project {
-  border: 1px solid var(--primary);
+  border: none;
+  box-shadow: 8px 4px 22px -5px var(--shadow-color);
+  background-color: var(--box-color);
   border-radius: 1.5rem;
   padding: 1rem;
 }
