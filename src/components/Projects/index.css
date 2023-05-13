@@ -17,6 +17,13 @@
   padding: 1rem;
 }
 
+.projects .project .details {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .projects .project h3 {
   font-size: 1.5rem;
 }
@@ -28,13 +35,20 @@
 
 .projects .project img {
   width: 100%;
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0;
+  height: 200px;
+  background-color: red;
 }
 
 .projects .project .links a {
   font-size: 1.2rem;
-  padding: 1rem 0.7rem;
-  text-decoration: underline;
+  padding: 1rem 1rem 0 0;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.projects .project .links a:hover {
+  opacity: 0.8;
 }
 
 .projects .project .technology {

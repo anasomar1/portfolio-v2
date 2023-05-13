@@ -52,13 +52,13 @@ const Navbar = ({
           >
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </div>
-          <div className="theme">
+          <button className="theme" role="button">
             {theme === "light" || !theme ? (
               <MdOutlineDarkMode onClick={() => updateTheme("dark")} />
             ) : (
               <MdOutlineWbSunny onClick={() => updateTheme("light")} />
             )}
-          </div>
+          </button>
         </div>
       </nav>
     </>
