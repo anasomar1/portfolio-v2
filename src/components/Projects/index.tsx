@@ -17,7 +17,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <div className="projects">
         {projects.map((project: Project) => (
-          <div className="project">
+          <div className="project" key={project.url}>
             <div className="details">
               <h3>{project.name}</h3>
               <h5 className="description">{project.description}</h5>
@@ -32,8 +32,10 @@ const Projects = () => {
             </div>
             <img src={project.imgPath} alt={project.name} />
             <div className="technologies">
-              {project.technologies.map((technology: string) => (
-                <button className="technology btn">{technology}</button>
+              {project.technologies.map((technology: string, index: number) => (
+                <button className="technology btn" key={index}>
+                  {technology}
+                </button>
               ))}
             </div>
           </div>
